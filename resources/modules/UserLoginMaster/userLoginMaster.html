@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>AdminLTE 3 | Registration Page</title>
+  
+</head>
+<body class="hold-transition register-page">
+
+<div ng-controller="userLoginCtrl">
+  <center>
+<div class="register-box uk-margin-top">
+  <div class="register-logo">
+    <b>Login</b> Please
+  </div>
+
+  <div class="card uk-padding uk-margin-top">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg">Please Fill Carefully </p>
+
+      
+        <div class="input-group mb-3 uk-margin-top uk-margin-bottom">
+          <input type="text" class="form-control" ng-model="loginobj.userName" placeholder="User name">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="input-group mb-3 uk-margin-top uk-margin-bottom">
+          <input type="password" class="form-control" ng-model="loginobj.userPassword" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        
+          <!-- /.col -->
+          <div class="col-12 uk-margin-top uk-margin-bottom">
+            <button type="submit" class="w3-button w3-teal w3-hover-teal" ng-click="register(loginobj)">Register Now</button>
+          </div>
+          <!-- /.col -->
+        </div>
+       <a ui-sref="userLoginMaster" class="text-center">Already Subscribed ? Login now</a>
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+</div></center>
+</div>
+</body>
+</html>
